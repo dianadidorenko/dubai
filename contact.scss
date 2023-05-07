@@ -1,0 +1,308 @@
+@import url(style.scss);
+
+// ========================================================================================
+[class*="__container"] {
+  max-width: 1834px;
+  margin: 0 auto;
+  padding: 0 38px;
+}
+
+// ========================================================================================
+.c-contact__breadcrumbs {
+  display: flex;
+  align-items: center;
+  max-width: 350px;
+  column-gap: 5px;
+  padding-top: 27px;
+  padding-bottom: 112px;
+  max-width: 1110px;
+  margin: auto;
+}
+.c-contact__breadcrumbs .h6 {
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14; // 16px
+  color: var(--primary-color);
+  column-gap: 3px;
+}
+.c-contact__breadcrumbs .not-active {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.14; // 16px
+  color: var(--not-active);
+}
+.c-contact__title {
+  padding-bottom: 90px;
+  max-width: 1110px;
+  margin: auto;
+}
+.map__block {
+  position: relative;
+}
+.info__block-320px {
+  display: none;
+}
+.info__block {
+  position: absolute;
+  top: 82px;
+  left: 345px;
+  z-index: 99;
+  background-color: var(--bg-color);
+  padding: 82px 90px 88px 89px;
+}
+.info__block-title,
+.info__block-number {
+  font-family: "GilroyBold";
+  font-size: 32px;
+  line-height: 1.4; // 45px
+  color: var(--primary-color);
+  padding-bottom: 33px;
+  span {
+    color: var(--secondary-color);
+  }
+}
+.info__block-address {
+  max-width: 365px;
+}
+.info__block-follow,
+.info__block-hours,
+.info__block-email {
+  font-weight: 400;
+  span {
+    font-weight: 700;
+  }
+}
+.info__block-address,
+.info__block-email,
+.info__block-hours,
+.info__block-follow {
+  padding-bottom: 61px;
+  font-family: "Work Sans";
+  font-size: 16px;
+  line-height: 1.31; // 21px
+  color: var(--not-active);
+}
+.info__block-number {
+  color: var(--primary-color);
+  padding-bottom: 93px;
+}
+.info__block-email {
+  padding-bottom: 30px;
+  color: var(--not-active);
+  span {
+    color: var(--primary-color);
+  }
+}
+.info__block-hours {
+  padding-bottom: 0;
+}
+.info__block-follow {
+  padding-bottom: 35px;
+  color: var(--primary-color);
+}
+.info__block-email,
+.info__block-hours {
+  color: var(--not-active);
+  span {
+    color: var(--primary-color);
+  }
+}
+
+.c-contact__form {
+  padding-top: 217px;
+  max-width: 1110px;
+  margin: auto;
+}
+.c-contact__form .h5 {
+  font-family: "GilroyBold";
+  font-size: 32px;
+  line-height: 1.09; // 35px
+  color: var(--primary-color);
+  padding-bottom: 71px;
+  span {
+    color: var(--secondary-color);
+  }
+}
+.c-contact__form .form {
+  padding-bottom: 157px;
+}
+.c-contact__form .form input,
+.c-contact__form .form textarea {
+  background-color: transparent;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  color: var(--not-active);
+}
+.c-contact__form .form input::placeholder,
+.c-contact__form .form textarea::placeholder {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18; // 19 px
+  color: var(--not-active);
+}
+
+.c-contact__form .form input {
+  padding: 17px 0 20px 23px;
+  width: 350px;
+  min-width: 100px;
+}
+
+.input-buffer {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  visibility: hidden;
+  white-space: nowrap;
+}
+.c-contact__form .form textarea {
+  padding: 26px 0 175px 27px;
+  width: 100%;
+  min-width: 100px;
+  resize: none;
+}
+.c-contact__form-first-row {
+  display: flex;
+  column-gap: 30px;
+  padding-bottom: 30px;
+}
+.c-contact__form-second-row {
+  padding-bottom: 30px;
+}
+.c-contact__form .button-yellow {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62; // 26px
+  padding: 14px 42px 13px 43px;
+}
+
+@media (max-width: 1200px) {
+  .c-contact__form .form input {
+    padding: 17px 0 20px 23px;
+  }
+  .c-contact__form .form textarea {
+    padding: 26px 0 175px 27px;
+  }
+  .info__block {
+    top: 120px;
+    left: 32px;
+    padding: 26px 36px 31px 29px;
+  }
+  .info__block-title {
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.23;
+  }
+  .info__block-address {
+    padding-bottom: 20px;
+    max-width: 210px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .info__block-number {
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.23;
+  }
+  .info__block-email {
+    padding-bottom: 27px;
+  }
+  .info__block-follow {
+    padding-bottom: 14px;
+  }
+  .info__block-hours {
+    max-width: 230px;
+    text-align: right;
+  }
+}
+@media (max-width: 768px) {
+  .c-contact__form .form input {
+    padding: 17px 0 20px 23px;
+  }
+  .c-contact__form .form {
+    padding-bottom: 71px;
+  }
+  .c-contact__breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .c-contact__title {
+    padding-bottom: 30px;
+  }
+  .c-contact__form {
+    padding-top: 70px;
+  }
+  .c-contact__form .h5 {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+  .c-contact__title .h2 {
+    font-size: 50px;
+    line-height: 1.24;
+  }
+  iframe {
+    height: 596px;
+  }
+}
+@media (max-width: 767.98px) {
+  .info__block {
+    position: static;
+  }
+  .info__block-320px {
+    display: block;
+    padding-bottom: 30px;
+  }
+  .info__block {
+    display: none;
+  }
+  .c-contact__form-first-row {
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 20px;
+  }
+  .c-contact__form .form input {
+    width: 370px;
+  }
+  .c-contact__form .form textarea {
+    width: 370px;
+    padding: 26px 0 155px 27px;
+  }
+}
+@media (max-width: 460px) {
+  iframe {
+    height: 351px;
+  }
+  .c-contact__title .h2 {
+    font-size: 30px;
+  }
+  .info__block-number {
+    color: var(--primary-color);
+  }
+  .c-contact__form {
+    padding-top: 52px;
+  }
+  .c-contact__form .form input {
+    padding: 16px 45px 21px 19px;
+    max-width: 245px;
+  }
+  .c-contact__form .form textarea {
+    max-width: 245px;
+    padding: 16px 55px 155px 19px;
+  }
+  .c-contact__form-second-row {
+    padding-bottom: 20px;
+  }
+  .c-contact__form .form {
+    padding-bottom: 61px;
+  }
+  .c-contact__form .button-yellow {
+    max-width: 245px;
+  }
+}
+
+// ========================================================================================
